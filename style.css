@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif; 
-  background-color: #f4f4f4;       
+  background-color: white;       
   color: #333;                   
-  margin: 0;
-  padding: 20px;
 }
 
 .container {
@@ -16,19 +19,45 @@ body {
   }
 
 header {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
   obgect-fit: cover;
+  gap: 20px;
 }
 
-nav.menu {
+.header-infa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  font-size: 28px;
+}
+
+.header-avatar {
+  display: flex;
+  width: 100px;
+  height: 100px:
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
+.menu-item {
+  list-style: none;
+  }
+
+.menu-link {
+  
+}
 section {
   padding: 20px;
   background-color: pink;
